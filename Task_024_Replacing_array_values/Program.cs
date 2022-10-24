@@ -22,7 +22,7 @@ int [] InitArray(int length)
 int GetLength(string message)
 {
     Console.Write(message);
-    int result = int.Parse(Console.ReadLine());
+    int result = int.Parse(Console.ReadLine() ?? "");
     return result;
 }
 

@@ -5,9 +5,9 @@
 Console.Clear();
 
 //задаём рандомный массив c length кол-вом значений:
-int [] InitArray(int length)
+int[] InitArray(int length)
 {
-    int [] resultArray = new int[length];
+    int[] resultArray = new int[length];
     Random rnd = new Random();
 
     for (int i = 0; i < resultArray.Length; i++)
@@ -21,7 +21,7 @@ int [] InitArray(int length)
 int GetNumber(string message)
 {
     Console.Write(message);
-    int num = int.Parse(Console.ReadLine());
+    int num = int.Parse(Console.ReadLine() ?? "");
     return num;
 }
 
@@ -29,12 +29,12 @@ int GetNumber(string message)
 int GetLength(string message)
 {
     Console.Write(message);
-    int length = int.Parse(Console.ReadLine());
+    int length = int.Parse(Console.ReadLine() ?? "");
     return length;
 }
 
 //ищем заданное значение в массиве:
-void FindNumber(int [] array, int num)
+void FindNumber(int[] array, int num)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -48,7 +48,7 @@ void FindNumber(int [] array, int num)
 }
 
 //вывод значений массива:
-void PrintArray(int [] array)
+void PrintArray(int[] array)
 {
     Console.WriteLine();
     for (int i = 0; i < array.Length; i++)
@@ -61,6 +61,6 @@ void PrintArray(int [] array)
 int length = GetLength("Введите размер массива: ");
 int num = GetNumber("Введите искомое значение: ");
 
-int [] arr = InitArray(length);
+int[] arr = InitArray(length);
 PrintArray(arr);
 FindNumber(arr, num);

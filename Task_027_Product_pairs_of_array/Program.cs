@@ -48,7 +48,7 @@ int [] ResFunc(int [] array)
  }
 
  Console.WriteLine("Введите кол-во эл-тов массива: ");
- int arraySize = int.Parse(Console.ReadLine());
+ int arraySize = int.Parse(Console.ReadLine() ??"");
 
  int [] arr = NewRandArray(arraySize);
  PrintArray(arr);

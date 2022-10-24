@@ -12,10 +12,10 @@ Point GetPoint()
 {
     Point point = new Point();
     Console.WriteLine("Введите координату X:");
-    point.X = int.Parse(Console.ReadLine());
+    point.X = int.Parse(Console.ReadLine() ?? "");
 
     Console.WriteLine("Введите координату Y:");
-    point.Y = int.Parse(Console.ReadLine());
+    point.Y = int.Parse(Console.ReadLine() ?? "");
 
     return point;
 }

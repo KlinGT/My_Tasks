@@ -17,5 +17,5 @@ void GetNumber (int num)
 }
 
 Console.WriteLine("Введите число: ");
-//int number = int.Parse(Console.ReadLine());
+int number = int.Parse(Console.ReadLine() ?? "");
 GetNumber(number);

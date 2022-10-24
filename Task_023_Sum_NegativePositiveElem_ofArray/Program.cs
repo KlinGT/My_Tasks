@@ -33,7 +33,7 @@ void PrintArray(int[] array)
 int GetNumber(string message)
 {
     Console.WriteLine(message);
-    int result = int.Parse(Console.ReadLine());
+    int result = int.Parse(Console.ReadLine() ?? "");
     return result;
 }
 /*

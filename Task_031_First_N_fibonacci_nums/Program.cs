@@ -19,13 +19,13 @@ int GetNum(string msg)
 int[] FiboArray(int num)
 {
     int[] array = new int[num];
-    
+/*
     if (num == 0) 
     {
         array[0] = 0;
         return array;
     }
-
+*/
     array[0] = 0;
     array[1] = 1;
 
@@ -40,7 +40,7 @@ int[] FiboArray(int num)
 void PrintArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
-        Console.Write(array[i] );
+        Console.Write($"{array[i]} ");
 }
 
 int num = GetNum("Введите кол-во нужных Фибоначчи:");
